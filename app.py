@@ -69,4 +69,8 @@ class_names = [
 predicted_class = class_names[predicted_index]
 
 # Display the predicted class
-st.write("Predicted Crop:", predicted_class)
+st.markdown(
+    f"<h2 style='color:green;'>Predicted Crop: <b>{predicted_class}</b></h2>",
+    unsafe_allow_html=True
+)
+
